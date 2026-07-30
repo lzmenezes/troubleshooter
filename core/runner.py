@@ -7,7 +7,7 @@ def run_full_diagnosis():
 
     for name, check_function in CHECKS.items():
         results[name] = check_function()
-
+        
     diagnosis = diagnose(results)
-
-    return results, 
+    
+    return results, diagnosis
