@@ -10,4 +10,4 @@ def run_full_diagnosis():
 
     diagnosis = diagnose(results)
 
-    return results, diagnosis
+    return results, 

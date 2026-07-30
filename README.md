@@ -22,25 +22,35 @@ A CLI tool that smartly diagnoses network issues.
 
 ## Quick Start
 
+**Linux / macOS**
 ```bash
 git clone https://github.com/lzmenezes/troubleshooter.git
 cd troubleshooter
 python -m venv .venv
-```
-
-Activate the virtual environment:
-
-| OS / Shell | Command |
-|---|---|
-| **Linux / macOS** | `source .venv/bin/activate` |
-| **Windows (PowerShell)** | `.venv\Scripts\Activate.ps1` |
-| **Windows (cmd)** | `.venv\Scripts\activate.bat` |
-
-Then install and run:
-
-```bash
+source .venv/bin/activate
 pip install rich pyfiglet
 python troubleshooter.py
+```
+
+**Windows (PowerShell)**
+```powershell
+git clone https://github.com/lzmenezes/troubleshooter.git
+cd troubleshooter
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install rich pyfiglet
+python troubleshooter.py
+```
+
+**Windows (cmd)**
+```cmd
+git clone https://github.com/lzmenezes/troubleshooter.git
+cd troubleshooter
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install rich pyfiglet
+python troubleshooter.py
+```
 
 ---
 
