@@ -20,7 +20,7 @@ A CLI tool that smartly diagnoses network issues.
 
 ---
 
-## Quick Start
+## Installation
 
 **Linux / macOS**
 ```bash
@@ -64,20 +64,6 @@ python troubleshooter.py
 | Subnet | Validates IP address and subnet mask configuration |
 | Bandwidth | Measures latency, jitter, and packet loss (10 pings) |
 
-### Diagnosis Engine
-
-Correlates all check results to determine the root cause:
-
-- Subnet failed -> Subnet configuration issue
-- Gateway failed -> Router unreachable
-- Gateway OK + Network failed -> ISP outage
-- Network OK + DNS failed -> DNS resolution failure
-- Bandwidth failed -> Unstable connection (high jitter or packet loss)
-
----
-
-## Project Structure
-
 ```
 troubleshooter/
   troubleshooter.py       Entry point and menu loop
@@ -104,7 +90,7 @@ troubleshooter/
 
 ## Adding a New Check
 
-1. Create `checks/foo.py` with a `run()` function returning `CheckResult`
+1. Create `checks/example.py` with a `run()` function returning `CheckResult`
 2. Register it in `core/registry.py` by adding to the `CHECKS` dict
 3. Optionally add a diagnosis rule in `diagnosis/engine.py`
 
