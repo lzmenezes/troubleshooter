@@ -64,6 +64,9 @@ python troubleshooter.py
 | Subnet | Validates IP address and subnet mask configuration |
 | Bandwidth | Measures latency, jitter, and packet loss (10 pings) |
 
+
+## Project Structure
+
 ```
 troubleshooter/
   troubleshooter.py       Entry point and menu loop
