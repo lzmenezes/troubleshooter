@@ -31,7 +31,7 @@ def show_banner():
     bottom_grid.add_column()
     
     bottom_grid.add_row(
-        "[bold cyan]  Developed By RootGuy[/bold cyan]",
+        "[bold cyan]  Developed by rootboy[/bold cyan]",
         "[blue]| https://github.com/lzmenezes[/blue]"
     )
     
